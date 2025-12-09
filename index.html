@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-Нолики</title>
+    <script src="https://yandex.ru/games/sdk/v2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Экран загрузки SDK -->
+    <div id="loadingScreen">
+        <div class="loader">⏳</div>
+        <div class="loading-text">Загрузка игры...</div>
+    </div>
+
+    
+    <!-- Кнопка закрытия -->
+    <button id="closeGame" class="close-btn" title="Закрыть игру">✕</button>
+    
+    <!-- Остальной код... -->
+
+  
+    <!-- Верхний баннер -->
+    <div class="banner-top" id="bannerTop">
+        <!-- Место для рекламы -->
+    </div>
+
+<body>
+    <!-- Кнопка закрытия игры -->
+    <button id="closeGame" class="close-btn" title="Закрыть игру">✕</button>
+    
+    <!-- Остальной код... -->
+
+    <div class="game-wrapper">
+        <!-- Главное меню -->
+        <div id="mainMenu" class="screen active">
+            <h1>Крестики-Нолики</h1>
+            <button id="btnSingle" class="menu-btn">Одиночная игра</button>
+            
+        </div>
+
+        <!-- Выбор сложности -->
+        <div id="difficultyScreen" class="screen">
+            <h2>Выберите сложность</h2>
+            <button id="btnEasy" class="menu-btn">Лёгкий</button>
+            <button id="btnMedium" class="menu-btn">Средний</button>
+            <button id="btnHard" class="menu-btn">Сложный</button>
+            <button id="btnBackDiff" class="back-btn">← Назад</button>
+        </div>
+
+        <!-- Игровое поле -->
+        <div id="gameScreen" class="screen">
+            <div class="game-header">
+                <button id="btnBackGame" class="back-btn">← Назад</button>
+                <div class="stats">
+                    <span>Побед: <b id="wins">0</b></span>
+                    <span>Поражений: <b id="losses">0</b></span>
+                    <span>Ничьих: <b id="draws">0</b></span>
+                </div>
+            </div>
+
+            <div class="turn-indicator" id="turnIndicator">Ваш ход (X)</div>
+
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <button id="btnRestart" class="restart-btn">Новая игра</button>
+        </div>
+    </div>
+
+    <!-- Нижний баннер -->
+    <div class="banner-bottom" id="bannerBottom">
+        <!-- Место для рекламы -->
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
